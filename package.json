@@ -4,7 +4,8 @@
   "description": "HIT Final Project",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "npm install"
   },
   "keywords": [],
   "author": "Adir Elmakais, Idan Refaeli, Ron Kipnis",
