@@ -39,7 +39,8 @@ app.listen(PORT, () => {
     id: 123123,
     firstName: 'moshe',
     lastName: 'israeli',
-    birthday: new Date(1990, 0, 10, 02),
+    birthday: new Date(1990, 0, 10),
+    reports: {},
   });
   user.save();
 });
