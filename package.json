@@ -11,6 +11,7 @@
   "author": "Adir Elmakais, Idan Refaeli, Ron Kipnis",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.1.1"
   }
