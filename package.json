@@ -4,7 +4,7 @@
   "description": "HIT Final Project",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "npx forever start app.js",
     "build": "npm install"
   },
   "keywords": [],
