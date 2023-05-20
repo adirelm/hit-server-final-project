@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const mainRouter = require('./src/routes/main');
-const { User } = require('./src/models/users');
 
 const PORT = process.env.PORT || 3000;
 
@@ -36,12 +35,4 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
-  const user = new User({
-    id: 123123,
-    firstName: 'moshe',
-    lastName: 'israeli',
-    birthday: new Date(1990, 0, 10),
-    reports: {},
-  });
-  user.save();
 });
