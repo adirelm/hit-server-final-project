@@ -6,9 +6,9 @@ const userSchema = new mongoose.Schema(
     // User's ID (assuming it's a number)
     id: { type: Number },
     // User's first name
-    firstName: { type: String },
+    first_name: { type: String },
     // User's last name
-    lastName: { type: String },
+    last_name: { type: String },
     // User's birthday (as a Date object)
     birthday: { type: Date },
     // User's reports (as an object)

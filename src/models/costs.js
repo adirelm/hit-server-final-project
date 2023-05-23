@@ -17,7 +17,7 @@ const costSchema = new mongoose.Schema(
     // Unique identifier for the cost
     id: { type: Number },
     // Reference to the User model
-    userId: { type: String, ref: 'User' },
+    user_id: { type: String, ref: 'User' },
     // Year of the cost
     year: { type: Number },
     // Month of the cost

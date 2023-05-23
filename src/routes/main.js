@@ -10,7 +10,7 @@ mainRouter.post('/addcost', async (req, res, next) => {
   try {
     // Generate a unique ID for the cost
     const id = Math.floor(Math.random() * new Date().getTime());
-    const { userId, year, month, day, description, category, sum } = req.body;
+    const { user_id, year, month, day, description, category, sum } = req.body;
 
     // Check if any required data is missing
     if (!year || !month || !day || !description || !category || !sum) {
@@ -28,11 +28,11 @@ mainRouter.post('/addcost', async (req, res, next) => {
     }
 
     // Find the user with the specified ID
-    const user = await User.findOne({ id: 123123 });
+    const user = await User.findOne({ id: user_id });
 
     // If user not found, throw an error
     if (!user) {
-      throw new ApiError(400, `User ${userId} not found`);
+      throw new ApiError(400, `User ${user_id} not found`);
     }
 
     // Create a new cost object with the provided data
@@ -87,7 +87,7 @@ mainRouter.get('/report', async (req, res, next) => {
       const matchedCosts = await Cost.find({
         year: year,
         month: month,
-        userId: user.id,
+        user_id: user.id,
       });
 
       // Generate the report object by categorizing the matched costs
