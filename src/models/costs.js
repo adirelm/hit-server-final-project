@@ -1,3 +1,17 @@
+/**
+ * first name: Adir
+ * last name: Elmakais
+ * id: 316413640
+ *
+ * first name: Idan
+ * last name: Refaeli
+ * id: 207351941
+ *
+ * first name: Ron
+ * last name: Kipnis
+ * id: 207275371
+ */
+
 const mongoose = require('mongoose');
 
 // Categories array used in the costSchema
